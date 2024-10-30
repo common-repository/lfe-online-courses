@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>wordpress popup</title>
+    <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.default.min.css" rel="stylesheet" />        
+    <script src="http://cdn.kendostatic.com/2014.2.716/js/jquery.min.js"></script>    
+    <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+    <link href="Content/popup.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div class="lfePopup">
+        <img alt="" src="Content/assets/add_store.png" />
+        <span class="header">Add Store to Page</span>
+        <div class="separator"></div>
+        <input type="radio" name="lfeRadio" value="add" id="lferadioAdd" style="margin-bottom:10px;" /><label for="lferadioAdd">Add New Store</label><br />
+        <input type="radio" name="lfeRadio" value="copy" id="lferadioCopy" /><label for="lferadioCopy">Copy Content from Existing Store</label>
+        <div class="separator"></div>
+
+        <div class="inpCont" id="lfeCopyCont">
+            Select Store to copy
+            <div class="input">
+                <input type="text" class="txt-inp" id="lfeStores" value="US Dollar" />
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="inpCont">
+            Store Name
+            <div class="input">
+                <input type="text" class="txt-inp" id="lfeStoreName" value="" />
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="inpCont" id="lfeCurrencyCont">
+            Store currency
+            <div class="input">
+                <input type="text" class="txt-inp" id="lfeCurrency" value="US Dollar" />
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div id="lfeExistCurrency"></div>
+
+        <div class="controlsCont">
+            <div id="lfebtnHelp" title="help"></div>
+            <div id="lfeButtons">
+                <div id="lfebtnCancel"></div>
+                <div id="lfebtnContinue"></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div id="lfeHelp">
+            <div class="separator"></div>
+            <b>Add a new store:</b><br />
+            You can create a brand new store and add courses to it by selecting the "Create new store" option. Enter a new name for your store, select the currency you will use for selling courses in this store, and viola! You have a brand new store!
+        </div>
+        
+        <div id="msgCont">
+            <div class="cover"><div class="close">X</div></div>
+            <div id="divMsg"></div>
+        </div>
+
+    </div>
+
+    <script src="scripts/tiny_mce_popup.js"></script>
+    <script src="scripts/popup.js"></script>
+
+</body>
+</html>
